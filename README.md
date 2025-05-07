@@ -1,5 +1,3 @@
-Objet : Envoi des documents pour le cours d'EDP non linéaires comme demandé
-
 # Traveling Salesman Problem Solver using Genetic Algorithm (MATLAB)
 
 This repository contains MATLAB code to solve the Traveling Salesman Problem (TSP) using a Genetic Algorithm (GA). The Genetic Algorithm is implemented in MATLAB to find an approximate solution to the TSP by evolving a population of possible tours to minimize the total distance traveled.
