@@ -26,7 +26,7 @@ This repository contains MATLAB code to solve the Traveling Salesman Problem (TS
 1. **Clone the Repository:**
    - Clone this repository to your local machine using:
      ```
-     git clone <repository-url>
+     git clone https://github.com/Bellaouali-anas/TSP_GA_on_Matlab.git
      ```
 
 2. **MATLAB Installation:**
