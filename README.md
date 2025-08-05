@@ -1,59 +1,95 @@
-# Traveling Salesman Problem Solver using Genetic Algorithm (MATLAB)
+# 🧠 Traveling Salesman Problem Solver using Genetic Algorithm (MATLAB)
 
-This repository contains MATLAB code to solve the Traveling Salesman Problem (TSP) using a Genetic Algorithm (GA). The Genetic Algorithm is implemented in MATLAB to find an approximate solution to the TSP by evolving a population of possible tours to minimize the total distance traveled.
+This repository provides a MATLAB implementation of a **Genetic Algorithm (GA)** to solve the classic **Traveling Salesman Problem (TSP)**. The algorithm evolves a population of candidate solutions over several generations to approximate the shortest possible route visiting each city exactly once and returning to the origin.
 
-## Files Included:
+---
 
-- `main.m`: This is the main script that serves as an entry point to run the TSP solver. It takes the following parameters:
-  - `Cout_mat`: Cost matrix representing the distances between cities.
-  - `n_p`: Number of populations in the GA.
-  - `n_i`: Number of iterations.
-  - `Ps`: Probability of selection.
-  - `P_R`: Probability of reproduction.
-  - `ox`: Order Crossover probability.
-  - `Taille`: Tournament selection size.
-  - `Pm`: Probability of mutation.
-  - `il`: Initialization size.
+## 📁 Repository Contents
 
-- `main.mlx`: This file contains an example of how to use the `main.m` function. It demonstrates how to set the input parameters and explains the returned values.
+- **`main.m`**  
+  The main script for running the TSP solver. It takes several configurable parameters.
 
-- Other supporting MATLAB files: The repository includes multiple MATLAB files that represent the functions utilized in solving the TSP problem using a Genetic Algorithm.
+- **`main.mlx`**  
+  A live script that demonstrates how to use `main.m`. It includes explanations, parameter setup, and output analysis.
 
-- `TSP_GA_Theory_Practice.pdf`: This PDF file provides theoretical and practical explanations of the TSP problem and the Genetic Algorithm used in this repository.
+- **Supporting MATLAB functions**  
+  Includes helper functions that define the GA operators (selection, crossover, mutation, etc.) tailored for solving the TSP.
 
-## Instructions to Run:
+- **`TSP_GA_Theory_Practice.pdf`**  
+  A PDF document explaining the theoretical background of the TSP and the genetic algorithm approach, along with practical implementation insights.
 
-1. **Clone the Repository:**
-   - Clone this repository to your local machine using:
-     ```
-     git clone https://github.com/Bellaouali-anas/TSP_GA_on_Matlab.git
-     ```
 
-2. **MATLAB Installation:**
-   - Ensure you have MATLAB installed on your machine.
+## ▶️ Getting Started
 
-3. **Running the Code:**
-   - Open MATLAB and navigate to the directory where the repository is cloned.
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Bellaouali-anas/TSP_GA_on_Matlab.git
+```
 
-4. **Running the `main.m` script:**
-   - Modify the parameters in the `main.m` file as needed.
-   - Run the `main.m` script in MATLAB.
+### 2. Open in MATLAB
 
-5. **Input Parameters:**
-   - Modify the input parameters in the `main.m` function call to experiment with different settings for the Genetic Algorithm. (`Taille`, `il`, etc.)
+Make sure MATLAB is installed on your machine. Then open MATLAB and navigate to the folder where you cloned the repository.
 
-6. **Example Usage:**
-   - Refer to the `main.mlx` file for an example of how to use the `main.m` function with explanation.
+### 3. Run the Solver
 
-7. **Results Returned by `main.m`:**
-   - `pop`: The final population of paths.
-   - `Best_Distances`: A list of the minimal distance of every iteration.
-   - `Best_Chemins`: A list of the paths with the minimal distance of every iteration.
-   - `dist_moyene`: A list of the average distances in every iteration.
+You can either:
+- Edit the parameters directly in `main.m` and run it.
+- Or follow the guided example in `main.mlx`, which explains the process and demonstrates how to use the solver.
 
-8. **Refer to `TSP_GA_Theory_Practice.pdf`:**
-   - For theoretical and practical aspects of the TSP problem and the Genetic Algorithm used.
 
-Please refer to the comments within the MATLAB files for more details about the specific functions used in the Genetic Algorithm for solving the TSP.
+## 🛠 Example Parameters
 
-For any questions or issues, refer to the provided documentation or reach out for assistance.
+Customize the algorithm by calling the function with your desired settings:
+
+```matlab
+main(Cout_mat, n_p, n_i, Ps, P_R, ox, Taille, Pm, il)
+```
+Where:
+
+  - `Cout_mat`: Cost/distance matrix between cities  
+  - `n_p`: Number of individuals in the population  
+  - `n_i`: Number of iterations (generations)  
+  - `Ps`: Selection probability  
+  - `P_R`: Reproduction probability  
+  - `ox`: Order crossover probability  
+  - `Taille`: Tournament selection size  
+  - `Pm`: Mutation probability  
+  - `cil`: Initialization population size
+    
+Refer to `main.mlx` for a detailed, interactive example.
+
+## 📊 Output Details
+Running the solver returns the following:
+
+`pop:` Final population of possible tours
+
+`Best_Distances:` Best (minimal) distance found at each generation
+
+`Best_Chemins:` Corresponding best path at each generation
+
+`dist_moyene:` Average population distance at each generation
+
+These outputs help evaluate how well the Genetic Algorithm is optimizing over time.
+
+## 📚 Documentation
+For theory and detailed explanation, see:
+
+TSP_GA_Theory_Practice.pdf
+
+It covers:
+
+An overview of the Traveling Salesman Problem
+
+Key concepts in Genetic Algorithms
+
+How both are combined in this project
+
+## 🙋 Support
+If you have any questions, suggestions, or run into issues:
+
+- 📬 Open an issue on this repository
+
+- 🤝 Reach out through the contact info provided
+
+- 🧑‍💻 You're welcome to contribute via pull requests!
+
